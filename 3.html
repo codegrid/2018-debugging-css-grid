@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<title>demo 2</title>
+<style>
+body {
+  margin: 0;
+  padding: 40px;
+}
+
+[class*="Grid_Item"] {
+  padding: 10px;
+  border-radius: 4px;
+  border: 3px solid #000;
+}
+.Grid_ItemA {
+  background-color: #cf2a27;
+}
+.Grid_ItemB {
+  background-color: #ff9900;
+}
+.Grid_ItemC {
+  background-color: #b45f06;
+}
+.Grid_ItemD {
+  background-color: #ff00ff;
+}
+.Grid_ItemE {
+  background-color: #d5a6bd;
+}
+.Grid_ItemF{
+  background-color: #45818e;
+}
+
+.Grid {
+  display: grid;
+  grid-template-rows: 100px 15px 50px 15px 200px 15px 50px; /* 余白用の行は15px */
+  grid-template-columns: 1fr 15px 1fr 15px 1fr; /* 余白用の列は15px */
+}
+.Grid_ItemA { grid-row: 1 / 1; grid-column: 1 / 6; }
+.Grid_ItemB { grid-row: 3 / 4; grid-column: 1 / 3; }
+.Grid_ItemC { grid-row: 3 / 4; grid-column: 3 / 6; }
+.Grid_ItemD { grid-row: 5 / 6; grid-column: 1 / 4; }
+.Grid_ItemE { grid-row: 5 / 6; grid-column: 5 / 6; }
+.Grid_ItemF { grid-row: 6 / 7; grid-column: 1 / 6; }
+</style>
+</head>
+<body>
+
+
+<div class="Grid">
+  <div class="Grid_ItemA">.Grid_ItemA</div>
+  <div class="Grid_ItemB">.Grid_ItemB</div>
+  <div class="Grid_ItemC">.Grid_ItemC</div>
+  <div class="Grid_ItemD">.Grid_ItemD</div>
+  <div class="Grid_ItemE">.Grid_ItemE</div>
+  <div class="Grid_ItemF">.Grid_ItemF</div>
+</div>
+
+
+</body>
+</html>
